@@ -1,70 +1,175 @@
-# Getting Started with Create React App
+# Create my portfolio using React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+* 
+* Start the app in dev mode by running `npm start`. Open [localhost:3000](http://localhost:3000) in your web browser and take a moment to study the rendered app.
 
-In the project directory, you can run:
+* Open `src/App.js` in VS code and notice how the created cards are being rendered inside of `Wrapper`, which is in turn being rendered inside of the `App` component. 
+* 
+## Description
+Develop the initial scaffolding for my first portfolio site using React.
+Base Requirements
 
-### `npm start`
+Technologies that must be used:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ -  React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Navigation with React Router, dynamic rendering, or another third part router
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Your portfolio must contain the following information:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Your name
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Links to your:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  -  GitHub Profile
 
-### `npm run eject`
+  - LinkedIn Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Email Address
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Phone Number - (optional)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  - PDF version of your resume
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Your resume must contain up-to-date projects and professional experience
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ A list of projects (Challenges or Projects). For each project, make sure you have the following:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  - Project title
 
-### Analyzing the Bundle Size
+  - Link to the deployed version
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  - Link to the GitHub repository
 
-### Making a Progressive Web App
+  - GIF or screenshot of the deployed application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Required Components
 
-### `npm run build` fails to minify
+At a minium, your portfolio must render these 6 components:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+  - App
+
+  - Header
+
+ -  Home
+
+ - Project Gallery
+
+ - Project
+
+  - Contact
+
+
+
+
+Required Component Content
+
+
+  - App:
+
+ Must be your top level component and render all necessary children components
+
+ - Header:
+
+ Must be rendered across the entire site
+
+ Must Contain a Navbar
+
+ - Project Gallery:
+
+ Must render dynamically 6 instances of the Project component
+
+
+ Store project data in a JSON file and import it into my project
+
+
+
+ * Project:
+
+
+ Must be a reusable component that ingests JSON data as a props and renders a single instance for each project.
+
+ Must utilize router props to properly render the right project based on user selection
+
+ Must render the following info:
+
+ -  Project title
+
+  - Link to the deployed version
+
+  - Link to the GitHub repository
+ 
+  - GIF or screenshot of the deployed application
+
+
+ * Contact:
+
+
+ Must have contact information
+
+ Have a contact form for handling events
+
+
+ * Home:
+
+This should be a welcome landing page that contains:
+
+ - Your Name
+
+ - A Headshot of you
+
+ - Your brand statement
+
+ - Some indication that this is your portfolio site
+
+
+
+Updated Social Media Presence
+
+ * LinkedIn
+
+Update my LinkedIn Profile with the new skills I've acquired since the last time it was updated.
+
+
+ * GitHub
+
+Update GitHub profile with pinned repositories featuring those same projects. 
+
+
+## Screenshots
+
+ * GIF or screenshot of the deployed application
+
+## Links to submitted items
+
+* The URL of the GitHub repository: 
+https://github.com/Marilena-C/Marilena-C_React-Portfolio
+
+* The URL of the deployed page:
+ https://marilena-c.github.io/Marilena-C_React-Portfolio/
+
+ * Resume:
+ https://onedrive.live.com/edit.aspx?resid=946C76ED4E51DA32!293&app=Word&wdnd=1&wdPreviousSession=7aefa4b2%2D851e%2D47a0%2D9269%2D14716975287b
+
+ ## Resources:
+ 
+ * [DOM vs Virtual DOM] (https://reactjs.org/docs/faq-internals.html%20-%20https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9)
+ 
+ * [React's documentatCn components and props](https://reactjs.org/docs/components-and-props.html)
+
+ *  [‘useEffect’ in react] (https://dev.to/colocodes/6-use-cases-of-the-useeffect-reactjs-hook-282o)
+
+ * https://reactrouter.com/en/main
+ 
